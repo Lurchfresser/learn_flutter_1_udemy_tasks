@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:learn_flutter_1_udemy_tasks/presentation/add_question_screen/add_question_screen.dart';
 import 'package:learn_flutter_1_udemy_tasks/presentation/quizScreen/quiz_screen.dart';
 
 enum DeviceType {
@@ -37,7 +38,7 @@ class _NavigationState extends State<Navigation> {
   ];
   final List<Widget> _bodyChildren = [
     const QuizScreen(),
-    const Placeholder(),
+    const AddQuestionScreen(),
   ];
 
   int _currentIndex = 0;
